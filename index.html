@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="McGeeLab — Experiments, tools, and systems by Taylor McGee." />
+  <title>McGeeLab</title>
+
+  <!-- If you later add a favicon, uncomment this:
+  <link rel="icon" href="/favicon.png" />
+  -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <!-- Decorative arcs (right side) -->
+    <div class="arcs" aria-hidden="true">
+      <span class="arc a1"></span>
+      <span class="arc a2"></span>
+      <span class="arc a3"></span>
+      <span class="arc a4"></span>
+      <span class="arc a5"></span>
+      <span class="arc a6"></span>
+      <span class="dash d1"></span>
+      <span class="dash d2"></span>
+      <span class="dash d3"></span>
+      <span class="dash d4"></span>
+    </div>
+
+    <header class="top">
+      <div class="brand">
+        <!-- Icon placeholder. If you have a logo image, set src="logo.png" and remove "is-placeholder" -->
+        <div class="logo is-placeholder" aria-hidden="true"></div>
+
+        <div class="brand-text">
+          <h1>McGeeLab</h1>
+          <p class="tagline">Experiments <span class="dot">•</span> Tools <span class="dot">•</span> Systems</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="button primary" href="https://taylor-mcgee.com" target="_blank" rel="noreferrer">
+          taylor-mcgee.com
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Featured Projects</h2>
+
+        <div class="grid">
+          <a class="tile" href="https://github.com/McGee-Lab/sentinel-bg-monitor" target="_blank" rel="noreferrer">
+            <div class="tile-head">
+              <span class="pill">Hardware</span>
+              <span class="pill">Nightscout</span>
+            </div>
+            <div class="tile-title">Sentinel BG Monitor</div>
+            <div class="tile-desc">
+              A personal BG display + alert system using the Nightscout API (Dexcom G7 via Nightscout).
+            </div>
+            <div class="tile-foot">
+              <span class="hint">View repo</span>
+              <span class="arrow">→</span>
+            </div>
+          </a>
+
+          <a class="tile" href="https://taylor-mcgee.com" target="_blank" rel="noreferrer">
+            <div class="tile-head">
+              <span class="pill">Portfolio</span>
+              <span class="pill">Founder</span>
+            </div>
+            <div class="tile-title">Taylor McGee</div>
+            <div class="tile-desc">
+              Main portfolio hub for projects, work, and links.
+            </div>
+            <div class="tile-foot">
+              <span class="hint">Open site</span>
+              <span class="arrow">→</span>
+            </div>
+          </a>
+
+          <!-- Replace these with your real links when ready -->
+          <a class="tile" href="#" onclick="return false;">
+            <div class="tile-head">
+              <span class="pill">Games</span>
+            </div>
+            <div class="tile-title">Cyberkite Games</div>
+            <div class="tile-desc">
+              Indie game development studio. (Link coming soon)
+            </div>
+            <div class="tile-foot">
+              <span class="hint">Coming soon</span>
+              <span class="arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="tile" href="#" onclick="return false;">
+            <div class="tile-head">
+              <span class="pill">Maker</span>
+            </div>
+            <div class="tile-title">McGee’s Custom Creations</div>
+            <div class="tile-desc">
+              Laser-cut & maker products. (Link coming soon)
+            </div>
+            <div class="tile-foot">
+              <span class="hint">Coming soon</span>
+              <span class="arrow">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Connect</h2>
+
+        <div class="links">
+          <a class="link" href="https://github.com/mcgee-lab" target="_blank" rel="noreferrer">
+            <span class="link-left">
+              <span class="icon">⌂</span>
+              GitHub
+            </span>
+            <span class="link-right">github.com/mcgee-lab</span>
+          </a>
+
+          <a class="link" href="https://x.com/McGeeLabs" target="_blank" rel="noreferrer">
+            <span class="link-left">
+              <span class="icon">✦</span>
+              Twitter / X
+            </span>
+            <span class="link-right">@McGeeLabs</span>
+          </a>
+
+          <!-- Replace with your real channel URLs -->
+          <a class="link" href="#" onclick="return false;">
+            <span class="link-left">
+              <span class="icon">▶</span>
+              YouTube
+            </span>
+            <span class="link-right">add your channel link</span>
+          </a>
+
+          <a class="link" href="#" onclick="return false;">
+            <span class="link-left">
+              <span class="icon">◆</span>
+              Discord
+            </span>
+            <span class="link-right">add your invite / username</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="fine">
+          © <span id="year"></span> Taylor McGee
+        </div>
+        <div class="fine">
+          Built with calm vigilance.
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
